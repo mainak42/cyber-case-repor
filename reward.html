@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Actions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: url('https://images.unsplash.com/photo-1579546929662-711aa81148cf') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .action-btn {
+      background-color: #ffffff;
+      color: #1a237e;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .action-btn:hover {
+      background-color: #e0e0e0;
+      transform: scale(1.05);
+    }
+
+    .next-btn {
+      margin-top: 40px;
+      padding: 12px 25px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .next-btn:hover {
+      background-color: #43a047;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <a href="case_reporting.html" class="action-btn">Case Reporting</a>
+      <a href="submit.html" class="action-btn">Submit</a>
+    </div>
+    <div class="row">
+      <a href="upload.html" class="action-btn">Upload</a>
+      <a href="reward.html" class="action-btn">View Reward</a>
+    </div>
+
+    <!-- Next Button -->
+    <a href="index.html" class="next-btn">Next</a>
+  </div>
+
+</body>
+</html>

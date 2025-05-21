@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Status</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #d4fcd4, #a3cfff);
+      padding: 40px;
+      color: #333;
+    }
+
+    .menu-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #2c3e50;
+    }
+
+    .top-section,
+    .middle-section,
+    .bottom-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .label {
+      background: #ccc;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      width: 250px;
+    }
+
+    .button,
+    .payment-btn {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover,
+    .payment-btn:hover {
+      background: #2980b9;
+    }
+
+    .next-btn {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .next-btn a {
+      padding: 10px 20px;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .next-btn a:hover {
+      background: #1e8449;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-icon">&#9776;</div>
+  <h2>Application Status</h2>
+
+  <div class="top-section">
+    <div class="label">Track Your Application</div>
+    <input type="text" placeholder="Application Number">
+    <button class="button">Verify</button>
+  </div>
+
+  <div class="middle-section">
+    <button class="button">Resolve & Recover</button>
+  </div>
+
+  <div class="bottom-section">
+    <button class="button">View Bill</button>
+    <button class="payment-btn">Make Payment</button>
+  </div>
+
+  <div class="next-btn">
+    <a href="about us.html">Back to Home</a>
+  </div>
+
+</body>
+</html>

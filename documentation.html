@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    label {
+      flex: 1 0 150px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    textarea {
+      flex: 2 1 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .submit-section {
+      text-align: right;
+      margin-top: 30px;
+    }
+
+    .submit-section input[type="submit"] {
+      padding: 12px 30px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-section input[type="submit"]:hover {
+      background-color: #1c5980;
+    }
+
+    .next-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .next-link a {
+      text-decoration: none;
+      color: white;
+      background: #27ae60;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .next-link a:hover {
+      background: #1e8449;
+    }
+
+    .menu-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-icon">&#9776;</div>
+
+  <div class="container">
+    <h2>Submit Cybersecurity Report</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="report_type">Report Type:</label>
+        <input type="text" name="report_type" id="report_type" required>
+      </div>
+
+      <div class="form-group">
+        <label for="doc_upload">Upload Document:</label>
+        <input type="file" name="doc_upload" id="doc_upload" accept=".pdf,.doc,.docx">
+      </div>
+
+      <div class="form-group">
+        <label for="video_upload">Upload Video:</label>
+        <input type="file" name="video_upload" id="video_upload" accept="video/*">
+      </div>
+
+      <div class="form-group">
+        <label for="report_description">Description:</label>
+        <textarea name="report_description" id="report_description" required></textarea>
+      </div>
+
+      <div class="submit-section">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <div class="next-link">
+      <a href="application-status.html">Go to Application Status</a>
+    </div>
+  </div>
+</body>
+</html>

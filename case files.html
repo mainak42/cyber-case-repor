@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      color: #fff;
+    }
+
+    .header {
+      background-color: #ffffff;
+      color: #2a5298;
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: 12px 30px;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .case-button {
+      background-color: #ffffff;
+      color: #2a5298;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 40px;
+      margin: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 320px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, background-color 0.3s;
+    }
+
+    .case-button:hover {
+      transform: translateY(-3px);
+      background-color: #e0e0e0;
+    }
+
+    .check-icon {
+      background-color: #4caf50;
+      color: white;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 1.1rem;
+      margin-left: 10px;
+    }
+
+    .nav-buttons {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-buttons a {
+      background-color: #ffffff;
+      color: #2a5298;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #e0e0e0;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Case Dashboard</div>
+
+  <!-- Case Buttons -->
+  <a href="ethical_hacker.html" class="case-button">
+    <span>Click to View Case Details</span>
+    <span class="check-icon">✔</span>
+  </a>
+  <a href="ethical_hacker.html" class="case-button">
+    <span>Click to View Case Details</span>
+    <span class="check-icon">✔</span>
+  </a>
+  <a href="ethical_hacker.html" class="case-button">
+    <span>Click to View Case Details</span>
+    <span class="check-icon">✔</span>
+  </a>
+  <a href="ethical_hacker.html" class="case-button">
+    <span>Click to View Case Details</span>
+    <span class="check-icon">✔</span>
+  </a>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <a href="reward.html">Next</a>
+    <a href="submit_page.html">Submit</a>
+    <a href="review_page.html">Review</a>
+  </div>
+
+</body>
+</html>
